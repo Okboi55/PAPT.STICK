@@ -1,0 +1,152 @@
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f0fa;
+    color: #1a1a1a;
+}
+
+nav {
+    background-color: #2e4a7e;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #f0e6d2;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 2.5rem;
+}
+
+.nav-links a {
+    color: #f0e6d2;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d4a017;
+}
+
+.content {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2e4a7e;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.3rem;
+    color: #4a4a4a;
+}
+
+.sticker-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.sticker-section h2 {
+    color: #2e4a7e;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.sticker-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.sticker-grid img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sticker-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .sticker-section {
+        padding: 1rem;
+    }
+
+    .sticker-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .sticker-grid img {
+        width: 100%;
+        max-width: 200px;
+    }
+}
